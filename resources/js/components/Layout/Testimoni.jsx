@@ -1,11 +1,8 @@
-import React from 'react';
+import React from "react";
 import { useState } from "react";
 
 // import react slick
 import Slider from "react-slick";
-// import Stars from "../public/assets/Icon/stars.svg";
-// import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
-// import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
     listTestimoni = [
@@ -115,7 +112,10 @@ const Testimoni = ({
                                         {listTestimonis.rating}
                                     </p>
                                     <span className="flex ml-4">
-                                        {/* <Stars className="h-4 w-4" /> */}
+                                        <img
+                                            src="/assets/Icon/stars.svg"
+                                            className="h-4 w-4"
+                                        />
                                     </span>
                                 </div>
                             </div>
@@ -132,13 +132,19 @@ const Testimoni = ({
                         className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
                         onClick={sliderRef?.slickPrev}
                     >
-                        {/* <ArrowBack className="h-6 w-6 " /> */}
+                        <img
+                            src="/assets//Icon/eva_arrow-back-fill.svg"
+                            className="h-6 w-6 "
+                        />
                     </div>
                     <div
                         className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
                         onClick={sliderRef?.slickNext}
                     >
-                        {/* <ArrowNext className="h-6 w-6" /> */}
+                        <img
+                            src="/assets/Icon/eva_arrow-next-fill.svg"
+                            className="h-6 w-6"
+                        />
                     </div>
                 </div>
             </div>

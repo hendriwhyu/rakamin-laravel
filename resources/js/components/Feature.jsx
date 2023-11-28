@@ -8,7 +8,6 @@ const features = [
     "Panduan Manual Lengkap",
     "Uptime 99.99%",
     "Jaminan keamanan",
-    "High Enterprise Server",
 ];
 
 const Feature = () => {

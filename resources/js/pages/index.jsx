@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Layout from "@/components/Layout/Layout";
 import SeoHead from "@/components/SeoHead";
 import Feedback from "@/components/Feedback";
+import Accordion from "@/components/Accordion";
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
                 <Feature />
                 <Pricing />
                 <Feedback />
+                <Accordion/>
             </Layout>
         </>
     );

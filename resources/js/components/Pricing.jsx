@@ -1,8 +1,5 @@
 import React, { useMemo } from "react";
-import Testimoni from "./Layout/Testimoni";
-import ButtonPrimary from "@/components/misc/ButtonPrimary";
 import ButtonOutline from "@/components/misc/ButtonOutline.";
-// import Maps from "../public/assets/HugeGlobal.svg";
 import {
     FaEnvelope,
     FaFolder,
@@ -337,29 +334,28 @@ const Pricing = ({
                             className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"
                             variants={scrollAnimation}
                         >
-                            {/* <Netflix className="h-18 w-auto" /> */}
                             <img
-                                src="/assets/Icon/amazon.png"
-                                className="h-14 w-auto mt-4 lg:mt-2"
+                                src="/assets/Icon/gc-icon.png"
+                                className="h-16 w-auto mt-4 lg:mt-2"
                                 alt=""
                             />
                             <img
-                                src="/assets/Icon/netflix.png"
-                                className="h-14 w-auto mt-2 lg:mt-0"
+                                src="/assets/Icon/cpanel.png"
+                                className="h-8 w-auto mt-2 lg:mt-0"
                                 alt=""
                             />
                             <img
-                                src="/assets/Icon/reddit.png"
+                                src="/assets/Icon/idea.png"
                                 className="h-12 w-auto mt-2 lg:mt-0"
                                 alt=""
                             />
                             <img
-                                src="/assets/Icon/discord.png"
-                                className="h-14 w-auto mt-2 lg:mt-0"
+                                src="/assets/Icon/achi.png"
+                                className="h-16 w-auto mt-2 lg:mt-0"
                                 alt=""
                             />
                             <img
-                                src="/assets/Icon/spotify.png"
+                                src="/assets/Icon/bp.id.png"
                                 className="h-12 w-auto mt-2 lg:mt-0"
                                 alt=""
                             />

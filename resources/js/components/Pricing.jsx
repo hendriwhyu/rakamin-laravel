@@ -3,12 +3,36 @@ import Testimoni from "./Testimoni";
 import ButtonPrimary from "@/components/misc/ButtonPrimary";
 import ButtonOutline from "@/components/misc/ButtonOutline.";
 // import Maps from "../public/assets/HugeGlobal.svg";
-import { FaEnvelope, FaFolder, FaMicrochip, FaServer, FaShieldHalved } from "react-icons/fa6";
+import {
+    FaEnvelope,
+    FaFolder,
+    FaMicrochip,
+    FaServer,
+    FaShieldHalved,
+} from "react-icons/fa6";
 import { motion } from "framer-motion";
 import getScrollAnimation from "@/utils/getScrollAnimation";
 import ScrollAnimationWrapper from "@/components/Layout/ScrollAnimationWrapper";
 
-const Pricing = () => {
+const Pricing = ({
+    listUser = [
+        {
+            name: "Pelanggan",
+            number: "45.000",
+            icon: "/assets/Icon/heroicons_sm-user.svg",
+        },
+        {
+            name: "Partner",
+            number: "50",
+            icon: "/assets/Icon/partner.svg",
+        },
+        {
+            name: "Server",
+            number: "100",
+            icon: "/assets/Icon/bx_bxs-server.svg",
+        },
+    ],
+}) => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
     return (
@@ -260,24 +284,51 @@ const Pricing = () => {
                             variants={scrollAnimation}
                             className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto"
                         >
-                            Huge Global Network of Fast VPN{" "}
+                            Qwords
                         </motion.h3>
                         <motion.p
                             className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12"
                             variants={scrollAnimation}
                         >
-                            See LaslesVPN everywhere to make it easier for you
-                            when you move locations.
+                            Qwords telah menjadi mitra pilihan bagi lebih dari
+                            45.000 pelanggan dan 50 rekan bisnis,dengan
+                            memiliki 100 server, kami siap melayani
+                            kebutuhan Anda.
                         </motion.p>
                     </ScrollAnimationWrapper>
-                    <ScrollAnimationWrapper>
-                        <motion.div
-                            className="py-12 w-full px-8 mt-16"
-                            variants={scrollAnimation}
-                        >
-                            {/* <Maps className="w-full h-auto" /> */}
-                        </motion.div>
-                    </ScrollAnimationWrapper>
+                    <div className="relative w-full flex my-10">
+                        <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
+                            {listUser.map((listUsers, index) => (
+                                <motion.div
+                                    className="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
+                                    key={index}
+                                    custom={{ duration: 2 + index }}
+                                    variants={scrollAnimation}
+                                >
+                                    <div className="flex mx-auto w-40 sm:w-auto">
+                                        <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                                            <img
+                                                src={listUsers.icon}
+                                                className="h-6 w-6"
+                                            />
+                                        </div>
+                                        <div className="flex flex-col">
+                                            <p className="text-xl text-black-600 font-bold">
+                                                {listUsers.number}+
+                                            </p>
+                                            <p className="text-lg text-black-500">
+                                                {listUsers.name}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </ScrollAnimationWrapper>
+                        <div
+                            className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+                            style={{ filter: "blur(114px)" }}
+                        ></div>
+                    </div>
                     <ScrollAnimationWrapper>
                         <motion.div
                             className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap"

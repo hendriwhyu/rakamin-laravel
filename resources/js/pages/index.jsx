@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Feature } from "@/components/Feature";
 import Pricing from "@/components/Pricing";
 import Hero from "@/components/Hero";

@@ -7,18 +7,18 @@ import ScrollAnimationWrapper from "@/components/Layout/ScrollAnimationWrapper";
 const Hero = ({
     listUser = [
         {
-            name: "Users",
-            number: "390",
+            name: "Pelanggan",
+            number: "45.000",
             icon: "/assets/Icon/heroicons_sm-user.svg",
         },
         {
-            name: "Locations",
-            number: "20",
-            icon: "/assets/Icon/gridicons_location.svg",
+            name: "Liputan",
+            number: "10",
+            icon: "/assets/Icon/newsicon.svg",
         },
         {
             name: "Server",
-            number: "50",
+            number: "100",
             icon: "/assets/Icon/bx_bxs-server.svg",
         },
     ],
@@ -34,13 +34,14 @@ const Hero = ({
                 >
                     <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
                         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-                            Want anything to be easy with{" "}
-                            <strong>LaslesVPN</strong>.
+                            Cloud Hosting untuk Websitemu{" "}
+                            <strong>Qwords</strong>.
                         </h1>
                         <p className="text-black-500 mt-4 mb-6">
-                            Provide a network for all your needs with ease and
-                            fun using LaslesVPN discover interesting features
-                            from us.
+                            Qwords menawarkan layanan Cloud Hosting Akses Cepat,
+                            Standar Keamanan Tinggi, Uptime Server 99,99%, Fitur
+                            Lengkap dan Dukungan Pelanggan 24 jam untuk memenuhi
+                            kebutuhan website Anda.
                         </p>
                         <ButtonPrimary>Get Started</ButtonPrimary>
                     </div>
@@ -50,7 +51,7 @@ const Hero = ({
                             variants={scrollAnimation}
                         >
                             <img
-                                src="/assets/Illustration1.png"
+                                src="/assets/Illustration4.webp"
                                 alt="VPN Illustrasi"
                                 quality={100}
                                 width={612}

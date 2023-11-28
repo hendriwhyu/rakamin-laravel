@@ -30,7 +30,7 @@ export default {
             },
             orange: {
                 100: "#FFECEC",
-                500: "#F53855",
+                500: "#FF6D0B",
             },
             green: {
                 500: "#2FAB73",
@@ -52,5 +52,6 @@ export default {
             boxShadow: ["active", "hover"],
         },
     },
+    plugins: [],
 };
 

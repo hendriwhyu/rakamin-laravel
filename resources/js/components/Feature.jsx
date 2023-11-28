@@ -4,10 +4,11 @@ import getScrollAnimation from "@/utils/getScrollAnimation";
 import ScrollAnimationWrapper from "@/components/Layout/ScrollAnimationWrapper";
 
 const features = [
-    "Powerfull online protection.",
-    "Internet without borders.",
-    "Supercharged VPN",
-    "No specific time limits.",
+    "Layanan 24/7",
+    "Panduan Manual Lengkap",
+    "Uptime 99.99%",
+    "Jaminan keamanan",
+    "High Enterprise Server",
 ];
 
 const Feature = () => {
@@ -21,11 +22,11 @@ const Feature = () => {
             <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12">
                 <ScrollAnimationWrapper className="flex w-full justify-end">
                     <motion.div
-                        className="h-full w-full p-4"
+                        className="h-full w-full p-4 flex items-center"
                         variants={scrollAnimation}
                     >
                         <img
-                            src="/assets/Illustration2.png"
+                            src="/assets/Illustration5.webp"
                             alt="VPN Illustrasi"
                             layout="responsive"
                             quality={100}
@@ -40,16 +41,18 @@ const Feature = () => {
                         variants={scrollAnimation}
                     >
                         <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-                            We Provide Many Features You Can Use
+                            Solusi Paket Hosting Terbaik dari Kami
                         </h3>
                         <p className="my-2 text-black-500">
-                            You can explore the features that we provide with
-                            fun and have their own functions each feature.
+                            Kami menawarkan solusi paket hosting terbaik untuk
+                            segala kebutuhan website dan sistem Anda dengan
+                            kecepatan, uptime server, kapasitas, keamanan, fitur
+                            tambahan dan dukungan pelanggan terbaik.
                         </p>
                         <ul className="text-black-500 self-start list-inside ml-8">
                             {features.map((feature, index) => (
                                 <motion.li
-                                    className="relative circle-check custom-list"
+                                    className="relative circle-check custom-list pb-4"
                                     custom={{ duration: 2 + index }}
                                     variants={scrollAnimation}
                                     key={feature}

@@ -8,10 +8,17 @@ import getScrollAnimation from "@/utils/getScrollAnimation";
 const Accordion = () => {
     const scrollAnimation = useMemo(() => getScrollAnimation(), []);
     return (
-        <div className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14" id="accordion">
+        <div
+            className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+            id="accordion"
+        >
             <div className="max-w-screen-xl  px-4 sm:px-6 lg:px-10 mx-auto flex flex-col w-full text-center justify-center">
-                <div className="flex flex-wrap">
-                    <div className="w-full px-4">
+                <ScrollAnimationWrapper className="flex flex-wrap">
+                    <motion.div
+                        variants={scrollAnimation}
+                        custom={{ duration: 3 }}
+                        className="w-full px-4"
+                    >
                         <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
                             <span className="mb-2 block text-lg font-semibold text-primary">
                                 FAQ
@@ -24,11 +31,15 @@ const Accordion = () => {
                                 Qwords
                             </h2>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </ScrollAnimationWrapper>
 
-                <div className="flex flex-wrap">
-                    <div className="w-full px-4 lg:w-1/2">
+                <ScrollAnimationWrapper className="flex flex-wrap">
+                    <motion.div
+                        variants={scrollAnimation}
+                        custom={{ duration: 3 }}
+                        className="w-full px-4 lg:w-1/2"
+                    >
                         <AccordionItem
                             header="Apa itu web hosting?"
                             text="Hosting adalah tempat penyimpanan file dan data website seperti teks, video dan gambar website. File dan data tersebut di simpan di dalam server yang terkoneksi dengan internet sehingga data tersebut dapat diakses oleh siapa saja, kapan saja dan di mana saja."
@@ -41,8 +52,12 @@ const Accordion = () => {
                             header="Bagaimana cara membeli hosting?"
                             text="Kami memiliki panduan cara membeli hosting di Qwords sesuai kebutuhan. Beli hosting Indonesia di Qwords kini juga semakin mudah dengan adanya berbagai metode pembayaran."
                         />
-                    </div>
-                    <div className="w-full px-4 lg:w-1/2">
+                    </motion.div>
+                    <motion.div
+                        variants={scrollAnimation}
+                        custom={{ duration: 3 }}
+                        className="w-full px-4 lg:w-1/2"
+                    >
                         <AccordionItem
                             header="Ada berapa jenis hosting di Qwords?"
                             text="Value Performance, High Performance Cloud Hosting Bisnis, High Performance Cloud Hosting Enterprise, WordPress Hosting, Unlimited Hosting."
@@ -55,9 +70,9 @@ const Accordion = () => {
                             header="Apa saya bisa transfer Hosting ke Qwords?"
                             text="Ya, Anda bisa melakukan transfer Hosting dari provider lain ke Qwords Cloud Hosting Indonesia. Caranya, silahkan lakukan pemesanan Cloud Hosting baru sesuai paket yang Anda inginkan, kemudian informasikan kebutuhan migrasi pada tim support kami, lalu proses migrasi akan dibantu hingga selesai."
                         />
-                    </div>
-                </div>
-                <ScrollAnimationWrapper className="relative w-full mt-8">
+                    </motion.div>
+                </ScrollAnimationWrapper>
+                {/* <ScrollAnimationWrapper className="relative w-full mt-8">
                     <motion.div
                         variants={scrollAnimation}
                         custom={{ duration: 3 }}
@@ -77,7 +92,7 @@ const Accordion = () => {
                             style={{ filter: "blur(114px)" }}
                         ></div>
                     </motion.div>
-                </ScrollAnimationWrapper>
+                </ScrollAnimationWrapper> */}
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 # Rakamin Project
 
-Project Akhir Intern Based Learning Rakamin: Pengembanga Fullstack Developer dengan fokus pada Laravel, Inertia.js, dan React. Saya berhasil merancang ulang landing page Qwords menggunakan template Lesless VPN, menunjukkan penguasaan konsep-konsep frontend dan backend.
+Project Akhir Intern Based Learning Rakamin: Pengembangan Fullstack Developer dengan fokus pada Laravel, Inertia.js, dan React. Saya berhasil merancang ulang landing page Qwords menggunakan template Lesless VPN, menunjukkan penguasaan konsep-konsep frontend dan backend.
 
 ## Authors
 
